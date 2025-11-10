@@ -1,0 +1,17 @@
+Privacy Policy  
+Last updated: 11 November, 2025
+
+This Privacy Policy applies to the mobile application "Credit Tracker" (the "App"), published by Ilya Makarevich.  
+
+The App does not collect, store, or share any personal data from users. No user information is transmitted to external servers or third parties.  
+
+If you have any questions about this Privacy Policy, you may contact us at: makarevi4@gmail.com.  
+
+By using the App, you acknowledge that no personal data is collected or processed.  
+
+Payments
+We may provide paid products and/or services within the Service. In that case, we may use third-party services for payment processing (e.g. payment processors).
+We will not store or collect Your payment card details. That information is provided directly to Our third-party payment processors whose use of Your personal information is governed by their Privacy Policy. These payment processors adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, Mastercard, American Express and Discover. PCI-DSS requirements help ensure the secure handling of payment information.
+We exclusively use the Apple Store In-App Payments. Their Privacy Policy can be viewed at https://www.apple.com/legal/privacy/en-ww/
+
+Ilya Makarevich  
