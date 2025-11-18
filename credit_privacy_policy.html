@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Credit Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #6d98d4;
+            --text-color: #333;
+            --light-gray: #f5f7fa;
+            --border-color: #e1e5eb;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            min-height: 100vh;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: cover;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .app-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 0 0 1.5rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h2 i {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        
+        .highlight-box {
+            background: var(--light-gray);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .no-data-icon {
+            text-align: center;
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin: 1.5rem 0;
+        }
+        
+        .last-updated {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 2rem;
+            text-align: center;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 2.5rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .app-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .app-link {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .app-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+            line-height: 1.5;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .card {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .app-links {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .app-link {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="app-icon">
+                <i class="fas fa-credit-card"></i>
+            </div>
+            <h1>Credit Tracker</h1>
+            <p class="tagline">Simple. Secure. Private.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <p class="last-updated">Last updated: November 2025</p>
+        
+        <div class="card">
+            <h2><i class="fas fa-user-shield"></i> Privacy Policy</h2>
+            
+            <p>Ilya Makarevich ("I", "me", or "my") operates the Credit Tracker mobile application (the "Service").</p>
+            
+            <div class="highlight-box">
+                <p><strong>Credit Tracker does not collect, store, or use any personal information from its users.</strong> This application respects your privacy and operates entirely on your device without transmitting any data to external servers.</p>
+            </div>
+            
+            <div class="no-data-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            
+            <h2><i class="fas fa-info-circle"></i> Information Collection</h2>
+            
+            <p>Credit Tracker is designed with privacy as a core principle. The application:</p>
+            
+            <ul>
+                <li>Does not require any personal information to use</li>
+                <li>Does not collect usage statistics or analytics</li>
+                <li>Does not use cookies or similar tracking technologies</li>
+                <li>Does not access your device's contacts, photos, or other personal data</li>
+                <li>Does not share any information with third parties</li>
+            </ul>
+            
+            <h2><i class="fas fa-money-check-alt"></i> Payment Data and Purchase History</h2>
+            
+            <p>The App uses RevenueCat to manage trial versions and paid subscriptions. RevenueCat's Privacy Policy can be found <a href="https://www.revenuecat.com/privacy" target="_blank">here</a>.</p>
+            
+            <p>When you make in-app purchases, RevenueCat processes your payment information to manage your subscription. This includes:</p>
+            
+            <ul>
+                <li>Purchase history and subscription status</li>
+                <li>Information necessary to process payments (handled by the app store)</li>
+                <li>Device information related to subscription management</li>
+            </ul>
+            
+            <p>Credit Tracker itself does not have access to your payment details. All payment processing is handled securely through the Apple App Store or Google Play Store, following their respective privacy policies and security standards.</p>
+            
+            <h2><i class="fas fa-mobile-alt"></i> Data Storage</h2>
+            
+            <p>All data you enter into Credit Tracker (such as credit information, payment history, or notes) is stored locally on your device only. This data never leaves your device and is not backed up to any cloud services unless you explicitly use your device's backup system (like iCloud or Google Drive backups).</p>
+            
+            <h2><i class="fas fa-shield-alt"></i> Security</h2>
+            
+            <p>Since Credit Tracker does not transmit or store your data on external servers, your information remains secure on your personal device. We recommend using your device's security features (like passcodes, Face ID, or Touch ID) to protect your data.</p>
+            
+            <h2><i class="fas fa-external-link-alt"></i> Third-Party Links</h2>
+            
+            <p>The Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+            
+            <h2><i class="fas fa-child"></i> Children's Privacy</h2>
+            
+            <p>My Service does not address anyone under the age of 13. I do not knowingly collect personally identifiable information from anyone, including children under 13.</p>
+            
+            <h2><i class="fas fa-sync-alt"></i> Changes to This Privacy Policy</h2>
+            
+            <p>I may update this Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.</p>
+            
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            
+            <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact me at <strong>makarevi4@gmail.com</strong>.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div style="text-align: center;">
+                <h3 style="margin-bottom: 1rem;">Credit Tracker</h3>
+                <p>Track your credits securely and privately</p>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-user"></i>
+                    <span>Author: Ilya Makarevich</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>makarevi4@gmail.com</span>
+                </div>
+            </div>
+            
+            
+            <p style="margin-top: 1.5rem; opacity: 0.8; font-size: 0.9rem;">&copy; 2025 Credit Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for cards when they come into view
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            cards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
